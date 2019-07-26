@@ -10,6 +10,7 @@ export default class Movie extends Component {
             title: "Movie Title", director: "", plot: "", release_date: "", score: "", poster: ""
         }};
     }
+    // Load Movie Data
     componentDidMount() {
         axios.get('http://localhost:5000/api/movies/' + this.props.match.params.id)
             .then(res => {
@@ -21,6 +22,7 @@ export default class Movie extends Component {
             });
         console.log(this.state.movie);    
     }
+    // Delete Movie, Confirm before delete
     deleteMovie(){
         let r = window.confirm("Do you really want to delete the movie?");
         if (r == true) {
