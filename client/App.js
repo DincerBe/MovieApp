@@ -58,12 +58,19 @@ export default class App extends Component {
             <Navbar loggedIn={this.state.loggedIn} updateUser={this.updateUser} key={this.state.loggedIn} />
           </header>
         </div>
+        // First Page, displays newest 20 added movies
         <Route path="/" exact component={Homepage} />
+        // Displays all added movies
         <Route path="/movies" exact component={Movies} />
+        // Displays single movie
         <Route path="/movie/:id" exact component={Movie} />
+        // Update page for the movie
         <Route path="/update/:id" component={UpdateMovie} />
+        // Add a new movie into the database
         <Route path="/add" component={AddMovie} />
+        // Login Page
         <Route path="/login" component={Login} />
+        // Signup Page
         <Route path="/signup" component={Register} />
       </Router>
     ) 
