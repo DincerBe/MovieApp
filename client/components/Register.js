@@ -55,7 +55,7 @@ export default class Register extends Component {
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" _ref="password" id="password" onChange={(e) => this.onChange(e)} placeholder="Password" required/>
                             </Form.Group>
-                            <Button type="submit">Submit form</Button>
+                            <Button type="submit">Register</Button>
                             <div>You already have an account? Click <Link to={"/login"}>here</Link> to login.</div>
                         </Col>
                     </Row>
