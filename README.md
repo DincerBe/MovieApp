@@ -31,7 +31,7 @@ APIs
 | localhost:5000/api/movies      | GET | Get All Movies |
 | localhost:5000/api/movies/:id      | GET      |   Get a Movie by Id |
 | localhost:5000/api/movies/:sort/:limit/:skip | GET      |    Get Movies; Set Sort, Limit number of Movies & Skip Movies |
-| localhost:5000/api/movies/add      | POST      |   Add a new Movie, Movie Data: {title: text, director: text,score: number[between 1-3],} |
+| localhost:5000/api/movies/add      | POST      |   Add a new Movie, Movie Data: {title: text, director: text,score: number[between 1-3],release_date: date,plot: text} |
 | localhost:5000/api/movies/update/:id      | POST     |   Update a Movie by Id |
 | localhost:5000/api/movies/delete/:id      | POST     |   Delete a Movie by Id |
 
