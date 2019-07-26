@@ -16,7 +16,7 @@ npm install
 npm run client-install
 
 # Run the Express server only
-npm run server
+npm start
 
 # Run the React client only
 npm run client
