@@ -36,7 +36,7 @@ APIs
 | localhost:5000/api/movies/delete/:id      | POST     |   Delete a Movie by Id |
 
 ## App Info
-
+Using Passport for User Auth
 ### Author
 
 Dinçer
