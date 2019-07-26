@@ -45,7 +45,6 @@ export default class Homepage extends Component {
             pageNumbers.push(i);
         }		
 		return pageNumbers.map((page) => {
-                console.log(page);
 				return (
 					<p key={page} onClick={()=>this.changePage(page)}>{page}</p>
 				);
