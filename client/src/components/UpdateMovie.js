@@ -27,7 +27,7 @@ export default class UpdateMovie extends Component {
                 console.log(error);
             });    
     }
-    onSubmit(e) {
+    onSubmit = (e) => {
         e.preventDefault();    
         const newMovie = {
             title: this.state.title,
