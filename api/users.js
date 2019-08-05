@@ -5,7 +5,7 @@ const passport = require('passport');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 
-// @route   GET api/users/register
+// @route   POST api/users/register
 // @desc    Signup a new User
 // @access  Public
 router.post('/register', (req, res) => {
@@ -40,7 +40,7 @@ router.post('/register', (req, res) => {
     })
 });
 
-// @route   GET api/users/login
+// @route   POST api/users/login
 // @desc    User Login
 router.post('/login', cors({origin: ['http://localhost:3000', 'http://localhost:5000'], credentials: true }),
   passport.authenticate('local', { successRedirect: '/',
